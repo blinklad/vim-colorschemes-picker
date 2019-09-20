@@ -1,38 +1,46 @@
-This fork is changed for fitting [vundle][1]
 
-add following line in you [vundle][1] config
-
-Bundle 'bkbncn/vim-colorschemes-picker'
-
-[1]:https://github.com/gmarik/vundle
 
 ## ABOUT ##
 
-Power VIM Users like us have already wasted tons of time to choose our favorite colorschemes, and may still not be satisfied with the current colorschemes. So I wrote this plugin to help us out, to meet the perfect colorscheme that we are __DESTINED__ to be with. (just like your lovely partners:)
+Power VIM Users like us have already wasted tons of time to choose our favorite colorschemes, and may still not be satisfied with the current colorschemes. *V*im*R*and*Colour* is not here to necessarily help you, it's here to add nondeterministic aesthetic into your daily life of editing text.
 
-Written by sunus Lee
+How does this work? How are colours selected?
+__Who knows__, really. Some guesses, though...
+1. When you start Vim;
+2. When you open a buffer;
+3. When you read or write to a buffer;
+4. When you open a split;
+5. Much, much more...
 
-sunus.the.dev[at]gmail.com
 
-Wed Dec 12 11:50:55 CST 2012
+This plugin has been adapted in a slightly more opinionated fashion to suit the current authors preference for the [Base16 project](https://github.com/chriskempson/base16) as well as memes. 
+Like real life, memes can be opted out of through the provided variables. 
 
-Added Windows Support, great news for windows vim users, right? :)
 
 ### Installation ###
 
-### As a Pathogen bundle ###
+
+### Pathogen 
 If you have pathogen installed and can just copy into ~/.vim/bundle like this:
 
-cd ~/.vim/bundle && \
-git clone https://github.com/sunuslee/vim-plugin-random-colorscheme-picker
+```cd ~/.vim/bundle ```
+``` git clone https://github.com/sunuslee/vim-plugin-random-colorscheme-picker ```
 
 if you are using Janus:
 
-cd ~/.janus && \
-git clone https://github.com/sunuslee/vim-plugin-random-colorscheme-picker
+``` cd ~/.janus && ```
+```git clone https://github.com/sunuslee/vim-plugin-random-colorscheme-picker ```
 
 
-### Without Pathogen ###
+### Vim-Plug
+
+```plug 'blinklad/vim-rand-colour' ```
+
+### [Bundle](https://github.com/gmarik/vundle)
+```Bundle 'bkbncn/vim-colorschemes-picker'``
+
+
+### Without Pathogen, Vim-Plug or Bundle###
 Just copy randomColorPicker.vim to your VIM runtime plugin path:
 
 
@@ -40,21 +48,21 @@ Just copy randomColorPicker.vim to your VIM runtime plugin path:
 
 You may need to create ~/.vim/plugin directory if it doesn't exist:
 
-`mkdir -p ~/.vim/plugin`
+```mkdir -p ~/.vim/plugin```
 
 then:
 
-`cp plugin/randomColorPicker.vim ~/.vim/plugin`
+```cp plugin/randomColorPicker.vim ~/.vim/plugin```
 
 ##### Windows #####
 
 1. create a directory at:
 
- `C:\Users\YourUsername\vimfiles\plugin`
+ ```C:\Users\YourUsername\vimfiles\plugin```
 
  or enter directory:
 
- `C:\Program Files\vim\vim73\plugin`
+ ```C:\Program Files\vim\vim73\plugin```
 
  vim73 might be vim72 or whatever.. as long as it's where your vim is installed, it's valid.
 
@@ -121,15 +129,9 @@ CSNext
   **NOTE:** This only works if Vim is aware of the other colorscheme paths, such as when you install colorscheme repositories using a plugin manager.
 
 ### Tips ###
-  Use this plugin with a large colorsheme pool will increase the possibility of meeting the right ColorScheme for you.
+This plugin is conservative in its _searching_ by default and will only look in your runtime path for colors. 
+It _does_ include Base16 colours, but if you wish to override this behaviour, refer to the provided variables.
 
-  So, I recommand you also use the ColorScheme Pack at:
+### Feedback is welcome
+Adapted by blinklad for meme potential. Originally written by [Sunus Lee](mailto:sunus.the.dev@gmail.com)
 
-  [Colo(u)r Sampler Pack : Oct 2012 Update](http://www.vim.org/scripts/script.php?script_id=625)
-
-  Big Thanks to __Robert Melton__ for his awesome work!
-
-  A more complete and actively maintained package can be found [here](https://github.com/flazz/vim-colorschemes).
-
-### Any Feedback and Suggestions is welcomed ###
-  mail me: sunus.the.dev[at]gmail.com
