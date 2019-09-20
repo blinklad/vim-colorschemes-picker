@@ -9,14 +9,14 @@ Relinquish control every once in a while and maybe you'll find what you're looki
 
 
 How does this work? How are colours selected?
-__Who knows__, really. Some guesses, though...
+_Who knows_, really. Some guesses, though...
 1. When you start Vim;
 2. When you open a buffer;
 3. When you read or write to a buffer;
 4. When you open a split;
 5. Much, much more...
 
-The frequency of these biases can be __hinted__ at, but only to certain extent (as to not defeat the purpose of relinquishing control of your scheme). The idea is that the bias used for selecting colours from like | love | hate will converge to an ideal set of characteristics over time.
+The frequency of these biases can be _hinted_ at, but only to certain extent (as to not defeat the purpose of relinquishing control of your scheme). The idea is that the bias used for selecting colours from like | love | hate will converge to an ideal set of characteristics over time.
 
 This plugin has been adapted in a slightly more opinionated fashion to suit the current authors preference for the [Base16 project](https://github.com/chriskempson/base16) as well as memes. 
 Like real life, memes can be opted out of through the provided variables. 
@@ -25,19 +25,19 @@ Like real life, memes can be opted out of through the provided variables.
 ### Installation ###
 
 
-### Pathogen 
+### [Pathogen](https://github.com/tpope/vim-pathogen)
 If you have pathogen installed and can just copy into ~/.vim/bundle like this:
 
 ```cd ~/.vim/bundle ```
-``` git clone https://github.com/sunuslee/vim-plugin-random-colorscheme-picker ```
+``` git clone https://github.com/blinklad/vim-rand-colour ```
 
 if you are using Janus:
 
 ``` cd ~/.janus && ```
-```git clone https://github.com/sunuslee/vim-plugin-random-colorscheme-picker ```
+```git clone https://github.com/blinklad/vim-rand-colour ```
 
 
-### Vim-Plug
+### [Vim-Plug](https://github.com/junegunn/vim-plug)
 
 ```plug 'blinklad/vim-rand-colour' ```
 
@@ -78,7 +78,6 @@ You will need to add the following line to your .vimrc file to pick the
 next random colorscheme:
 
 CSNext
-
 
 * __ALL The Commands below are CaseSensitive__
 
