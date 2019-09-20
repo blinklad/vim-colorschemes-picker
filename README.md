@@ -2,7 +2,11 @@
 
 ## ABOUT ##
 
-Power VIM Users like us have already wasted tons of time to choose our favorite colorschemes, and may still not be satisfied with the current colorschemes. *V*im*R*and*Colour* is not here to necessarily help you, it's here to add nondeterministic aesthetic into your daily life of editing text.
+Power VIM Users like us have already wasted tons of time to choose our favorite colorschemes, and may still not be satisfied with the current colorschemes. The typical approach to this issue is ironically spending _more_ time looking for a colour scheme.
+
+**V**im**R**and**Colour** flips this idea on its head. It is not here to necessarily help you, it's here to add aesthetical nondeterminism  into your daily life of editing text. 
+Relinquish control every once in a while and maybe you'll find what you're looking for...
+
 
 How does this work? How are colours selected?
 __Who knows__, really. Some guesses, though...
@@ -12,6 +16,7 @@ __Who knows__, really. Some guesses, though...
 4. When you open a split;
 5. Much, much more...
 
+The frequency of these biases can be __hinted__ at, but only to certain extent (as to not defeat the purpose of relinquishing control of your scheme). The idea is that the bias used for selecting colours from like | love | hate will converge to an ideal set of characteristics over time.
 
 This plugin has been adapted in a slightly more opinionated fashion to suit the current authors preference for the [Base16 project](https://github.com/chriskempson/base16) as well as memes. 
 Like real life, memes can be opted out of through the provided variables. 
@@ -37,7 +42,7 @@ if you are using Janus:
 ```plug 'blinklad/vim-rand-colour' ```
 
 ### [Bundle](https://github.com/gmarik/vundle)
-```Bundle 'bkbncn/vim-colorschemes-picker'``
+```Bundle 'bkbncn/vim-colorschemes-picker'```
 
 
 ### Without Pathogen, Vim-Plug or Bundle###
